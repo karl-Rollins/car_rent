@@ -144,7 +144,7 @@ main {
 
 .ads1 {
   background-image: url("../images/BG.svg");
-  background-color: rgb(84 166 254/ 1);
+  background-color: rgb(84 166 254/ 100%);
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -152,6 +152,7 @@ main {
   width: 100%;
   border-radius: 12px;
 }
+
 .ads2 {
   border-radius: 12px;
   background-image: url("../images/BG ii.svg");
@@ -196,5 +197,5 @@ main {
 }
 
 .btn2 {
-  background-color: rgb(84 166 254/ 1);
+  background-color: rgb(84 166 254/ 100%);
 }
