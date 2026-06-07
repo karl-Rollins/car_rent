@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-background: #fff;
+}
+
+body {
+  font-family: Inter, sans-serif;
+}
+
+header {
+  background-color: var(--primary-background);
+  height: 120px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-padding {
+  padding-left: 18rem;
+  padding-right: 18rem;
+}
+
+.logo {
+  background-image: url("../images/Logo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40px;
+  width: 150px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  max-width: 400px;
+  font-size: 3rem;
+}
+
+.search-icon i {
+  font-size: 2rem;
+  color: #b7bdc5;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  background: transparent;
+}
+
+.filter-button {
+  background-color: white;
+  border: none;
+  height: 40px;
+  width: 40px;
+}
+
+.filter-button i {
+  font-size: 2rem;
+  color: #b7bdc5;
+}
+
+.profile-notifications {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.outline {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heart {
+  background-image: url("../images/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  height: 30px;
+  width: 30px;
+}
+
+.bell {
+  background-image: url("../images/notification.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.settings {
+  background-image: url("../images/setting-2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.profile {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  border: 1px solid #e2e8f0;
+}
+
+.profile img {
+  width: 100%;
+  height: 100%;
+}
