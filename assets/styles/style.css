@@ -199,3 +199,117 @@ main {
 .btn2 {
   background-color: rgb(84 166 254/ 100%);
 }
+
+.pick-up {
+  background-color: var(--primary-background);
+  height: 130px;
+  width: 580px;
+  border-radius: 8px;
+}
+
+.pick-up-text {
+  padding: 2rem 3rem;
+}
+
+/* Container wrapper to align items */
+.check-dot-container {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  font-size: 1.8rem;
+  user-select: none;
+  gap: 10px;
+}
+
+/* Hide the default native checkbox */
+.default-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create the outer ring of the check dot */
+.custom-dot {
+  height: 20px;
+  width: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%; /* Makes it a circle */
+  display: inline-block;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Change the border color when hovered */
+.check-dot-container:hover .custom-dot {
+  border-color: #007bff;
+}
+
+/* Change the border color when checked */
+.default-checkbox:checked + .custom-dot {
+  border-color: #007bff;
+  background-color: transparent; /* Keep background clean */
+}
+
+/* Create the inner "check dot" using a pseudo-element */
+.custom-dot::after {
+  content: "";
+  position: absolute;
+  display: none; /* Hidden by default */
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #007bff; /* Dot color */
+  transform: translate(-50%, -50%) scale(0); /* Setup for a smooth scale-in animation */
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Reveal and scale up the inner dot when checked */
+.default-checkbox:checked + .custom-dot::after {
+  display: block;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.ldt {
+  height: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #90a3bf;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #90a3bf;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ldt-headings {
+  font-size: 1.7rem;
+}
+
+.angle-down {
+  font-size: 1.4rem;
+  display: flex;
+  gap: 1.5rem;
+  color: #90a3bf;
+}
