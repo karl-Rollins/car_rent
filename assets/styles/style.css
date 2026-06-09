@@ -291,6 +291,15 @@ main {
   margin-top: 1rem;
 }
 
+.ldt2 {
+  height: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
 .location {
   display: flex;
   flex-direction: column;
@@ -306,6 +315,26 @@ main {
 }
 
 .time {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.location2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #c3d4e966;
+}
+
+.date2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #c3d4e966;
+}
+
+.time2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
