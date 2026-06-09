@@ -1,3 +1,3 @@
-# 🏷 Project Name
+# 🏷 Car Rent Page
 
-**Car Rent: A car rent site replicated with HTML and CSS.**
+A car rent site replicated with HTML and CSS.
