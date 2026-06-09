@@ -11,6 +11,7 @@ html {
 :root {
   --primary-background: #fff;
   --secondary-background: #f6f7f9;
+  --btn-color: #3563e9;
 }
 
 body {
@@ -187,7 +188,7 @@ main {
 
 .btn {
   color: #fff;
-  background-color: #3563e9;
+  background-color: var(--btn-color);
   border: none;
   padding: 1rem 2rem;
   width: 150px;
@@ -198,6 +199,13 @@ main {
 
 .btn2 {
   background-color: rgb(84 166 254/ 100%);
+}
+
+.section-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 5rem;
 }
 
 .pick-up {
@@ -287,14 +295,14 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-right: 1px solid #90a3bf;
+  border-right: 1px solid #c3d4e966;
 }
 
 .date {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-right: 1px solid #90a3bf;
+  border-right: 1px solid #c3d4e966;
 }
 
 .time {
@@ -312,4 +320,24 @@ main {
   display: flex;
   gap: 1.5rem;
   color: #90a3bf;
+}
+
+.switch {
+  height: 70px;
+  width: 70px;
+  border-radius: 8px;
+  background-color: var(--btn-color);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.swap {
+  background-image: url("../images/Swap.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  height: 30px;
+  width: 30px;
+  align-self: center;
 }
