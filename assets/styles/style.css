@@ -341,3 +341,10 @@ main {
   width: 30px;
   align-self: center;
 }
+
+.drop-off {
+  background-color: var(--primary-background);
+  height: 130px;
+  width: 580px;
+  border-radius: 8px;
+}
